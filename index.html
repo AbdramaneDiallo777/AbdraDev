@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Abdramane Dev — Développeur freelance en France. Sites vitrine, sites dynamiques et applications web pour PME, commerces, écoles et particuliers.">
+  <title>Abdramane Dev — Développeur web freelance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Abdramane Diallo",
+    "jobTitle": "Développeur web freelance",
+    "email": "abdramanediallo005@gmail.com",
+    "image": "images/profile.png",
+    "areaServed": "France",
+    "knowsAbout": ["Développement web", "Sites vitrine", "Applications web"]
+  }
+  </script>
+</head>
+<body>
+  <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#hero" class="logo">
+        <span class="logo__mark">&lt;/&gt;</span>
+        <span class="logo__text">Abdramane Dev</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Navigation principale">
+        <a href="#services">Services</a>
+        <a href="#secteurs">Secteurs</a>
+        <a href="#process">Process</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#contact" class="btn btn--primary header__cta">Demander un devis</a>
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow">Développeur freelance · France</p>
+          <h1 class="hero__title">
+            Je crée des sites &amp; apps pour votre
+            <span class="typewriter" aria-live="polite">
+              <span id="typewriterWord">restaurant</span><span class="typewriter__cursor">|</span>
+            </span>
+          </h1>
+          <p class="hero__desc">
+            Sites vitrine, sites dynamiques et applications web sur mesure pour les PME,
+            commerces, écoles et particuliers. Un interlocuteur unique, du brief au déploiement.
+          </p>
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--primary">Démarrer un projet</a>
+            <a href="#portfolio" class="btn btn--ghost">Voir mes réalisations</a>
+          </div>
+          <div class="hero__stats">
+            <div class="stat">
+              <span class="stat__value">100%</span>
+              <span class="stat__label">Sur mesure</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value">FR</span>
+              <span class="stat__label">Clients en France</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value">24h</span>
+              <span class="stat__label">Réponse moyenne</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <div class="hero__profile">
+            <div class="hero__profile-glow" aria-hidden="true"></div>
+            <div class="hero__profile-frame">
+              <img
+                src="images/profile.png"
+                alt="Abdramane Diallo — Développeur web freelance"
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
+                width="480"
+                height="640">
+            </div>
+            <div class="hero__profile-badge">
+              <span class="hero__profile-name">Abdramane Diallo</span>
+              <span class="hero__profile-role">Dev web freelance</span>
+            </div>
+          </div>
+          <div class="hero__card hero__card--float">
+            <div class="code-snippet">
+              <span class="code-snippet__dot"></span>
+              <span class="code-snippet__dot"></span>
+              <span class="code-snippet__dot"></span>
+              <code>const site = build('votre-projet');</code>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__header">
+          <p class="eyebrow">Ce que je propose</p>
+          <h2 class="section__title">Services</h2>
+          <p class="section__desc">Des solutions adaptées à votre budget et à vos objectifs, sans compromis sur la qualité.</p>
+        </div>
+        <div class="services-grid">
+          <article class="card service-card">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            </div>
+            <h3>Site vitrine</h3>
+            <p>Présentez votre activité avec élégance. Design moderne, responsive et optimisé pour le référencement.</p>
+            <ul class="tag-list">
+              <li>One-page ou multi-pages</li>
+              <li>SEO de base</li>
+              <li>Hébergement inclus</li>
+            </ul>
+          </article>
+          <article class="card service-card service-card--featured">
+            <div class="service-card__badge">Populaire</div>
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3>Site dynamique</h3>
+            <p>Contenu évolutif, formulaires avancés, espace admin. Idéal pour les commerces et structures en croissance.</p>
+            <ul class="tag-list">
+              <li>CMS / back-office</li>
+              <li>Formulaires &amp; réservations</li>
+              <li>Évolutif dans le temps</li>
+            </ul>
+          </article>
+          <article class="card service-card">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+            </div>
+            <h3>Application web</h3>
+            <p>Outils métier, dashboards, plateformes sur mesure. Performance et expérience utilisateur au centre.</p>
+            <ul class="tag-list">
+              <li>Sur mesure</li>
+              <li>API &amp; intégrations</li>
+              <li>Maintenance</li>
+            </ul>
+          </article>
+          <article class="card service-card">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3>Maintenance &amp; refonte</h3>
+            <p>Mise à jour, corrections, modernisation de sites existants. Reprenez le contrôle de votre présence en ligne.</p>
+            <ul class="tag-list">
+              <li>Audit gratuit</li>
+              <li>Corrections rapides</li>
+              <li>Refonte complète</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="secteurs">
+      <div class="container">
+        <div class="section__header">
+          <p class="eyebrow">Pour qui ?</p>
+          <h2 class="section__title">Secteurs accompagnés</h2>
+          <p class="section__desc">Chaque métier a ses besoins. Je m'adapte à votre secteur et à vos clients finaux.</p>
+        </div>
+        <div class="sectors-grid">
+          <article class="card sector-card sector-card--large">
+            <img
+              src="images/restaurant.png"
+              alt="Salle de restaurant gastronomique élégante et lumineuse"
+              loading="lazy"
+              decoding="async"
+              width="1200"
+              height="800">
+            <div class="sector-card__overlay">
+              <h3>Restaurant</h3>
+              <p>Menu en ligne, réservations, galerie photos et horaires.</p>
+            </div>
+          </article>
+          <article class="card sector-card">
+            <img
+              src="images/boulangerie.png"
+              alt="Pains et viennoiseries artisanaux en boulangerie"
+              loading="lazy"
+              decoding="async"
+              width="1200"
+              height="800">
+            <div class="sector-card__overlay">
+              <h3>Boulangerie</h3>
+              <p>Vitrine locale, commandes, actualités.</p>
+            </div>
+          </article>
+          <article class="card sector-card sector-card--tall">
+            <img
+              src="images/ecole-bibliotheque.png"
+              alt="Rayonnage de bibliothèque scolaire avec ouvrages numériques"
+              loading="lazy"
+              decoding="async"
+              width="800"
+              height="500">
+            <div class="sector-card__overlay">
+              <h3>École</h3>
+              <p>Inscriptions, actualités, espace parents et calendrier.</p>
+            </div>
+          </article>
+          <article class="card sector-card">
+            <img
+              src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&h=600&q=90"
+              srcset="
+                https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=400&h=300&q=90 400w,
+                https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&h=600&q=90 800w,
+                https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&h=900&q=90 1200w"
+              sizes="(max-width: 540px) 100vw, 280px"
+              alt="Bureau moderne d'entreprise PME"
+              loading="lazy"
+              decoding="async"
+              width="800"
+              height="600">
+            <div class="sector-card__overlay">
+              <h3>PME</h3>
+              <p>Présentation, devis en ligne, CRM léger.</p>
+            </div>
+          </article>
+          <article class="card sector-card sector-card--wide">
+            <img
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1600&h=600&q=90"
+              srcset="
+                https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&h=300&q=90 800w,
+                https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1600&h=600&q=90 1600w,
+                https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2400&h=900&q=90 2400w"
+              sizes="(max-width: 540px) 100vw, (max-width: 900px) 50vw, 560px"
+              alt="Équipe collaborative — projet particulier ou associatif"
+              loading="lazy"
+              decoding="async"
+              width="1600"
+              height="600">
+            <div class="sector-card__overlay">
+              <h3>Particulier</h3>
+              <p>Portfolio, CV en ligne, blog personnel ou projet associatif.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section__header">
+          <p class="eyebrow">Comment ça marche</p>
+          <h2 class="section__title">Process</h2>
+          <p class="section__desc">Un parcours clair, sans jargon. Vous savez où on en est à chaque étape.</p>
+        </div>
+        <div class="process-track">
+          <div class="process-step">
+            <div class="process-step__num">01</div>
+            <h3>Échange &amp; brief</h3>
+            <p>On définit vos objectifs, votre public et vos contraintes lors d'un appel ou d'un message.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-step__num">02</div>
+            <h3>Proposition &amp; devis</h3>
+            <p>Devis détaillé, délais et périmètre. Pas de surprise, tout est écrit noir sur blanc.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-step__num">03</div>
+            <h3>Design &amp; développement</h3>
+            <p>Maquettes, validations intermédiaires, puis développement avec retours réguliers.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-step__num">04</div>
+            <h3>Livraison &amp; suivi</h3>
+            <p>Mise en ligne, formation rapide et support post-lancement pour démarrer sereinement.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="portfolio">
+      <div class="container">
+        <div class="section__header">
+          <p class="eyebrow">Réalisations</p>
+          <h2 class="section__title">Portfolio</h2>
+          <p class="section__desc">Quelques exemples de projets — chaque site est unique et pensé pour son client.</p>
+        </div>
+        <div class="portfolio-grid">
+          <article class="card portfolio-card">
+            <div class="portfolio-card__image">
+              <img
+                src="images/restaurant.png"
+                alt="Restaurant gastronomique — projet site vitrine Le Comptoir Gourmand"
+                loading="lazy"
+                decoding="async"
+                width="1200"
+                height="800">
+            </div>
+            <div class="portfolio-card__body">
+              <span class="portfolio-card__tag">Restaurant</span>
+              <h3>Le Comptoir Gourmand</h3>
+              <p>Site vitrine avec menu interactif, réservation et galerie. +40 % de réservations en ligne.</p>
+              <div class="portfolio-card__tech">
+                <span>HTML/CSS</span>
+                <span>JavaScript</span>
+                <span>Responsive</span>
+              </div>
+            </div>
+          </article>
+          <article class="card portfolio-card">
+            <div class="portfolio-card__image">
+              <img
+                src="images/ecole-bibliotheque.png"
+                alt="Bibliothèque scolaire — projet portail école"
+                loading="lazy"
+                decoding="async"
+                width="800"
+                height="500">
+            </div>
+            <div class="portfolio-card__body">
+              <span class="portfolio-card__tag">École</span>
+              <h3>École Les Petits Explorateurs</h3>
+              <p>Portail parents avec actualités, calendrier et formulaire d'inscription en ligne.</p>
+              <div class="portfolio-card__tech">
+                <span>Site dynamique</span>
+                <span>CMS</span>
+                <span>Formulaires</span>
+              </div>
+            </div>
+          </article>
+          <article class="card portfolio-card">
+            <div class="portfolio-card__image">
+              <img
+                src="images/boulangerie.png"
+                alt="Pains artisanaux en boulangerie — projet vitrine locale"
+                loading="lazy"
+                decoding="async"
+                width="1200"
+                height="800">
+            </div>
+            <div class="portfolio-card__body">
+              <span class="portfolio-card__tag">Boulangerie</span>
+              <h3>Maison Dupont</h3>
+              <p>Vitrine locale avec horaires, produits du jour et click &amp; collect simplifié.</p>
+              <div class="portfolio-card__tech">
+                <span>One-page</span>
+                <span>SEO local</span>
+                <span>Mobile-first</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container contact__grid">
+        <div class="contact__info">
+          <div class="contact__profile">
+            <img src="images/profile.png" alt="Photo de profil Abdramane Diallo" loading="lazy" width="80" height="80">
+          </div>
+          <p class="eyebrow">Parlons de votre projet</p>
+          <h2 class="section__title">Contact</h2>
+          <p class="section__desc">
+            Décrivez-moi votre besoin — je vous réponds sous 24 h avec une première estimation gratuite.
+          </p>
+          <ul class="contact__details">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+              <a href="mailto:abdramanediallo005@gmail.com">abdramanediallo005@gmail.com</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>France</span>
+            </li>
+          </ul>
+        </div>
+        <form class="card contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact">
+          <p class="hidden">
+            <label>Ne pas remplir : <input name="bot-field"></label>
+          </p>
+          <div class="form-group">
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" required placeholder="Votre nom">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="votre@email.fr">
+          </div>
+          <div class="form-group">
+            <label for="project">Type de projet</label>
+            <select id="project" name="project" required>
+              <option value="">Sélectionnez…</option>
+              <option value="vitrine">Site vitrine</option>
+              <option value="dynamique">Site dynamique</option>
+              <option value="app">Application web</option>
+              <option value="maintenance">Maintenance / refonte</option>
+              <option value="autre">Autre</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Décrivez votre projet, votre secteur, vos délais…"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Envoyer ma demande</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#hero" class="logo">
+        <span class="logo__mark">&lt;/&gt;</span>
+        <span class="logo__text">Abdramane Dev</span>
+      </a>
+      <p class="footer__copy">&copy; <span id="year"></span> Abdramane Dev. Tous droits réservés.</p>
+      <a href="mailto:abdramanediallo005@gmail.com" class="footer__email">abdramanediallo005@gmail.com</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
